@@ -1,0 +1,56 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbSach>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Danh sách sách</title>
+    <style>
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .book {
+            flex-basis: calc(16.666% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .book-image {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .book-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .book-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách các cuốn sách</h1>
+    
+        <div class="book-list">
+        @foreach (var item in Model)
+        {
+            <div class="book">
+                <img class="book-image" src="@item.imageUrl">
+                <div class="book-title">@Html.DisplayFor(modelItem => item.tenSach)</div>
+                <a class="book-button" asp-action="Details" asp-route-id="@item.Id">Xem thông tin sách</a>
+            </div>        
+        }
+        </div>
+</body>
+<p>Member @ViewBag.TotalUsers</p>
+<p>Book: @ViewBag.BookCount</p>

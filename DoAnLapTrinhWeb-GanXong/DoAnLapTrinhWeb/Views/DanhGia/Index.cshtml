@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DoAnLapTrinhWeb.Models.tbPhieuDanhGia>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}<h4>Đánh giá</h4>
+
+<h3>Danh sách đánh giá</h3>
+<a asp-controller="DanhGia" asp-action="LuuDanhGia" asp-route-sachId="@ViewBag.SachId">Đánh giá</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sach)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.diem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.binhluan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.FullName)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sach.tenSach)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.diem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.binhluan)
+                </td>
+                <td>
+                    @{
+                        ApplicationDbContext context = new ApplicationDbContext();
+                        var name = context.Users.FirstOrDefault(b => b.Id == item.userId);
+                    }
+                    @name.FullName.ToString()
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
