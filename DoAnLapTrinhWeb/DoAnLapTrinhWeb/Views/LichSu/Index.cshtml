@@ -1,0 +1,79 @@
+﻿@* @model IEnumerable<DoAnLapTrinhWeb.Models.tbLichSu> *@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userId = (string)ViewBag.userId;
+    ApplicationDbContext context = new ApplicationDbContext();
+    var listLichSu = context.tbLichSu.Where(lichSu => lichSu.userId == userId).ToList();
+}
+<h2>Lịch sử</h2>
+<style>
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .table th,
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        .table td.actions {
+            white-space: nowrap;
+        }
+
+            .table td.actions button {
+                display: inline-block;
+                padding: 5px 10px;
+                margin-right: 5px;
+                font-size: 14px;
+                border: none;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+
+                .table td.actions button a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .table td.actions button.delete {
+                    background-color: #f44336;
+                }
+</style>
+<table class="table">
+    <tbody>
+        @foreach (var item in listLichSu)
+        {
+            <tr>
+                <td>
+                    @{
+                        var Sach = context.tbSach.FirstOrDefault(b => b.Id == item.sachId);
+                    }
+                    @Sach.tenSach.ToString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.thoiGianDoc)
+                </td>
+                <td>
+                    <button><a asp-controller="Books" asp-action="Details" asp-route-Id="@item.sachId">Xem sách</a></button> |
+                   <button><a asp-controller="LichSu" asp-action="Delete" asp-route-sachId="@item.sachId" asp-route-userId="@item.userId">Xóa</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
