@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "deKskWZUfBxQ/+TlHMut78fYIHNoAPq87aQyCrwdVZY=",
+  "Hash": "cdGG6LLcXBHvAPzeJE9hIVTRyLfHW/K8ESn9OBQVbiY=",
   "Source": "DoAnLapTrinhWeb",
   "BasePath": "_content/DoAnLapTrinhWeb",
   "Mode": "Default",
@@ -4271,6 +4271,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ToiThayHoaVangTrenCoXanh.jpg"
+    },
+    {
+      "Identity": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\TrangQuynh_page-0010.jpg",
+      "SourceId": "DoAnLapTrinhWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\",
+      "BasePath": "_content/DoAnLapTrinhWeb",
+      "RelativePath": "images/TrangQuynh_page-0010.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\TrangQuynh_page-0010.jpg"
     },
     {
       "Identity": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\wwwroot\\images\\TrangQuynh_page-0064.jpg",

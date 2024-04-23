@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace DoAnLapTrinhWeb.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    [Authorize(Roles = "Admin")]
     public class PageController : Controller
     {
         private readonly ITrangRepository _trangRepository;

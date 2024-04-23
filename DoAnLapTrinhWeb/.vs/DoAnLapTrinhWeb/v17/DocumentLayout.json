@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|d:\\laptrinhweb\\doan-thuchien\\doanweb\\doanlaptrinhweb\\doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D06F71D4-0547-4316-B9DD-95EA3B7DBEF1}|DoAnLapTrinhWeb\\DoAnLapTrinhWeb.csproj|solutionrelative:doanlaptrinhweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,6 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 377,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\DoAn-ThucHien\\DoAnWeb\\DoAnLapTrinhWeb\\DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DoAnLapTrinhWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACEAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-23T15:24:11.131Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 923,
           "SelectedChildIndex": -1,
           "Children": [
             {
